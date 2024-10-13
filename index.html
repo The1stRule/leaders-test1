@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spreadsheet</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="sign-in">
+            <form id="myForm">
+                <p id="main-p">Sign Up</p>
+                <input type="text" name="fullname" />
+                <input type="password" name="pass" />
+                <div id="role-select">
+                    <div class="radio-div">
+                        <input type="radio" name="role" value="moderator" class="radio" id="r1">
+                        <label for="r1">moderator</label>
+                    </div>
+                    <div class="radio-div">
+                        <input type="radio" name="role" value="viewer" class="radio" id="r2">
+                        <label for="r2">viewer</label>
+                    </div>
+                </div>
+                <button id="btn">Submit</button>
+            </form>
+        </div>
+        <div id="main-div">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Student's fullname</th>
+                        <th>Student's Facebook</th>
+                        <th>Student's Age</th>
+                        <th>Parent's fullname</th>
+                        <th>Parent's Facebook</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
